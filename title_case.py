@@ -10,7 +10,7 @@ def my_cap(text):
 def my_title(text):
     words = []
     for t in text.split():
-        if t not in ("the", "a", "an", "in", "on"):
+        if t not in ("the", "a", "an", "in", "on","and","but"):
             words.append(my_cap(t))
         else:
             words.append(t)
@@ -18,7 +18,7 @@ def my_title(text):
 
 
 def test_driver():
-    cases = [
+   fcases = [
         ("the human torch", "The Human Torch"),
         ("uatu the watcher", "Uatu The Watcher"),
         ("susan storm-richards", "Susan Storm-richards"),
